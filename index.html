@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Telegram Automation Studio</title>
+  <style>
+    :root{
+      --bg:#1A1A1B;
+      --fg:#EDEDED;
+      --muted:#A0A0A5;
+      --accent:#0088CC;
+      --card:#232325;
+      --line:#2E2E32;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Pretendard, Arial, sans-serif;
+      color:var(--fg); background:linear-gradient(180deg,#151517, #1A1A1B 30%);
+    }
+    a{color:inherit; text-decoration:none}
+    .container{max-width:1100px; margin:0 auto; padding:64px 20px}
+    header{display:flex; align-items:center; justify-content:space-between}
+    .logo{font-weight:800; letter-spacing:.3px}
+    .badge{border:1px solid var(--line); padding:6px 10px; border-radius:999px; color:var(--muted)}
+    /* Hero */
+    .hero{display:grid; grid-template-columns:1.1fr .9fr; gap:32px; align-items:center; margin-top:48px}
+    .hero h1{font-size:42px; line-height:1.2; margin:0 0 16px}
+    .hero p{color:var(--muted); font-size:18px}
+    .cta{margin-top:28px; display:flex; gap:12px}
+    .btn{padding:14px 18px; border-radius:14px; border:1px solid var(--line); background:transparent; color:var(--fg); cursor:pointer}
+    .btn.primary{background:var(--accent); border-color:var(--accent); color:#001018; font-weight:700}
+    /* Telegram mock */
+    .phone{background:#0F0F12; border:1px solid var(--line); border-radius:24px; padding:14px}
+    .tg{background:#0E1621; border-radius:18px; padding:14px}
+    .bubble{max-width:90%; padding:10px 12px; border-radius:14px; margin-bottom:8px}
+    .bot{background:#1E2A3A}
+    .user{background:#2B5278; margin-left:auto}
+    .kbd{display:flex; gap:8px; margin-top:10px}
+    .key{flex:1; background:#17212B; border:1px solid #22303F; color:#9FB7D0; padding:10px; border-radius:10px; text-align:center}
+    /* Sections */
+    section{margin-top:96px}
+    .grid{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
+    .card{background:var(--card); border:1px solid var(--line); border-radius:18px; padding:22px}
+    .card h3{margin-top:0}
+    .stat{color:var(--accent); font-weight:800}
+    /* Pricing */
+    .price{font-size:28px; font-weight:900}
+    /* Footer */
+    footer{border-top:1px solid var(--line); margin-top:96px}
+    .tech{display:flex; gap:14px; color:var(--muted)}
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">Telegram Automation Studio</div>
+      <span class="badge">24/7 Automation</span>
+    </header>
+
+    <div class="hero">
+      <div>
+        <h1>당신의 비즈니스가 잠든 사이에도, 기술은 멈추지 않습니다.</h1>
+        <p>24시간 자동화 텔레그램 봇으로 반복 업무를 지우고, 의사결정의 속도를 높이세요. 단순 응답부터 복잡한 데이터 수집까지, 가장 직관적인 솔루션을 제공합니다.</p>
+        <div class="cta">
+          <a href="https://t.me/answering_auto_replying_bot" target="_blank" class="btn primary">무료 상담 및 견적 요청하기</a>
+          
+        </div>
+      </div>
+      <div class="phone">
+        <div class="tg">
+          <div class="bubble bot">안녕하세요! 무엇을 도와드릴까요?</div>
+          <div class="bubble user">뉴스 키워드 알림 설정</div>
+          <div class="bubble bot">키워드를 선택해주세요.</div>
+          <div class="kbd">
+            <div class="key">AI</div><div class="key">코인</div><div class="key">부동산</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <h2>문제 해결 사례</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>실시간 뉴스/기사 크롤링 봇</h3>
+          <p class="stat">정보 수집 리소스 90% 절감</p>
+          <p class="muted">수많은 매체 속에서 필요한 기사만 즉시 전달.</p>
+        </div>
+        <div class="card">
+          <h3>지능형 고객 응대 자동화 봇</h3>
+          <p class="stat">수동 응대 시간 70% 감소</p>
+          <p class="muted">FAQ 자동화와 관리자 호출로 신뢰도 향상.</p>
+        </div>
+        <div class="card">
+          <h3>맞춤형 비즈니스 통합</h3>
+          <p class="stat">24시간 즉각 대응</p>
+          <p class="muted">DB·알림·권한 관리까지 한 번에.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>서비스 & 가격</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Standard</h3>
+          <div class="price">80,000원</div>
+          <p>단순 반복 업무 자동화 및 기본 봇 세팅</p>
+        </div>
+        <div class="card">
+          <h3>Professional</h3>
+          <div class="price">300,000원</div>
+          <p>DB 연동, 유저 관리, 실시간 알림</p>
+        </div>
+        <div class="card">
+          <h3>Premium</h3>
+          <div class="price">800,000원~</div>
+          <p>AI 기능 탑재, 풀 커스텀 솔루션</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="card">
+        <h2>불필요한 시간을 덜어낼 준비가 되셨나요?</h2>
+        <p class="muted">지금 바로 당신의 비즈니스를 자동화하세요.</p>
+        <div class="cta"><a href="https://t.me/YOUR_BOT_USERNAME" target="_blank" class="btn primary">무료 상담 및 견적 요청하기</a></div>
+      </div>
+    </section>
+
+    <footer class="container">
+      <div class="tech">Python · Aiogram · Selenium</div>
+    </footer>
+  </div>
+</body>
+</html>
